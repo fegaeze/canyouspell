@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+    margin: 0
+}
+
+body {
+    min-height: 100vh;
+    height: 100%;
+    background-color: #032C3F;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 1rem;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+@media only screen and (min-width: 576px) {
+    body {
+        height: 100vh;
+    }
+}
+
+/* Utilities */
+.ml-p2 {
+    margin-left: .2rem
+}
+.d-none {
+    display: none;
+}
+.d-blk {
+    display: block;
+}
+.tt-uppercase {
+    text-transform: uppercase;
+}
+/* End of Utilities */
+
+
+header {
+    margin-bottom: 3rem;
+    color: #fff;
+}
+h1 {
+    color: #fff;
+    text-align: center;
+    font-size: 4rem;
+    margin-bottom: .5rem;
+    font-family: 'Fredericka the Great', cursive;
+}
+h2 {
+    color: #3bb75e;
+    font-size: 4rem;
+}
+p {
+    text-align: center;
+    max-width: 500px;
+    margin: 0 auto;
+    line-height: 1.4;
+}
+main {
+    max-width: 500px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+@media only screen and (min-width: 768px) {
+    main {
+        min-height: 300px;
+    }
+}
+
+img:hover {
+    fill: green;
+}
+
+button {
+    display: block;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    background: transparent;
+    font-size: .95rem;
+    font-weight: 500;
+}
+button#playButton {
+    width: 100%;
+    min-height: 80px;
+    border: 2px dashed #fff;   
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+button#playButton:hover{
+    border: 2px dashed #3bb75e;
+    color: #3bb75e;
+}
+button#next {
+    background: #3bb75e;
+    padding: .75rem 1.2rem;
+    margin-top: 2rem;
+}
+input#submit {
+    background: #3bb75e;
+    padding: .75rem 1.2rem;
+    border: none;
+    display: block;
+    border-radius: 5px;
+    color: #fff;
+    font-size: .95rem;
+    font-weight: 500;
+}
+input#word {
+    margin: 2rem 0 1.5rem;
+    border-radius: 5px;
+    border: 1px solid #fff;
+    color: #fff;
+    background: transparent;
+    padding: 0 .5rem;
+    outline: none;
+    display: block;
+    width: 100%;
+    min-height: 40px;
+    font-size: 1rem;
+}
+
+.submitted-modal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.uk-modal-dialog {
+    width: 500px;
+}
+.uk-modal-close-default {
+    position: static
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great|Source+Sans+Pro:600" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.22/css/uikit.min.css"/>
+    <link rel="stylesheet" href="style.css">
+    <title>Spell Checker</title>
+</head>
+<body>
+    <header>
+        <h1>CAN YOU SPELL?</h1>
+        <p>
+            Put your spelling skills to the test. Listen to the word spoken when you click the play button and spell it. Have fun!
+        </p>
+    </header>
+    <main>
+        <button id="playButton">            
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-play">
+                <polygon points="5 3 19 12 5 21 5 3"></polygon>
+            </svg>
+            <span class="ml-p2">Play</span>
+        </button>
+        <input type="text" name="word" id="word">
+        <input type="button" id="submit" value="Submit Word">
+
+        <section id="submitted" class="uk-flex-top" uk-modal>
+            <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
+                <div class="submitted-modal">
+                    <img src="assets/thumbs-up.svg" id="rightAnswer">
+                    <img src="assets/wrong.svg" id="wrongAnswer" class="d-none">
+                    <p id="scoreText">You're amazing</p>
+                    <p class="d-none" id="correction">The correct spelling is: <span id="correctWord" class="tt-uppercase"></span></p>
+                    <button id="next" class="uk-modal-close-default">Next Word</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.22/js/uikit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.22/js/uikit-icons.min.js"></script>
+    <script src="spell.js"></script>
+</body>
+</html>
